@@ -8,7 +8,7 @@ variable "repository_description" {
   description = "A description for the GitHub repository"
   type        = string
   
-  validatertion {
+  validation {
     condition     = length(var.repository_description) > 0
     error_message = "The repository cannot be empty. Please provide a description."
   }
